@@ -1,0 +1,37 @@
+body{
+    margin: 0;
+   
+    padding: 0;
+}
+.sub-header{
+    text-align: center;
+    margin:0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+.weather-header{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+.main{
+    width: 600px;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    margin-left: 30%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+.main2{
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 10%;
+    border: none;
+    width: 100px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    font-weight: bolder;
+}

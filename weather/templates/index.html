@@ -1,0 +1,45 @@
+ {% load static %} 
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>WEATHER</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <div class='main-header'>
+            <div class='sub-header'>
+       <h1>Weather Detector</h1>
+            </div>
+       <form method='POST' action=''>
+         {% csrf_token %}
+<input type='text' name='city' placeholder='search' class='main'/>
+<input type='submit' value='Search' class="main2" />
+</form>
+
+<link rel='stylesheet' href="{% static "style.css" %}" >
+<div class="weather-header">
+{% if data.country_code %}
+<div class="weather-subheader">
+    <h1>{{city}}</h1>
+<h3>Country_code:{{data.country_code}}</h3>
+<p>coordinate:{{data.coordinate}}</p>
+<p>temp:{{data.temp}}</p>
+<p>pressure:{{data.pressure}}</p>
+<p>humidity:{{data.humidity}}</p>
+{% comment %}
+ {% endcomment %}
+
+</div>
+{% endif %}
+</div>
+</div>
+
+
+        <script src="" async defer></script>
+    </body>
+</html>
