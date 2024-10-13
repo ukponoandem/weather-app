@@ -23,14 +23,14 @@
 
 <link rel='stylesheet' href="{% static "style.css" %}" >
 <div class="weather-header">
-{% if data.country_code %}
+{% if Data.country_code %}
 <div class="weather-subheader">
     <h1>{{city}}</h1>
-<h3>Country_code:{{data.country_code}}</h3>
-<p>coordinate:{{data.coordinate}}</p>
-<p>temp:{{data.temp}}</p>
-<p>pressure:{{data.pressure}}</p>
-<p>humidity:{{data.humidity}}</p>
+<h3>Country_code:{{Data.country_code}}</h3>
+<p>coordinate:{{Data.coordinate}}</p>
+<p>temp:{{Data.temp}}</p>
+<p>pressure:{{Data.pressure}}</p>
+<p>humidity:{{Data.humidity}}</p>
 {% comment %}
  {% endcomment %}
 

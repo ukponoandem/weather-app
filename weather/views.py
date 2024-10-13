@@ -35,5 +35,5 @@ def index(request):
         
     else:
         city="NO result"
-        data={}  
-    return render(request,'index.html', {"city":city,"data":data})
+        Data={}  
+    return render(request,'index.html', {"city":city,"Data":Data})

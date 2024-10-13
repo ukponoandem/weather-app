@@ -35,3 +35,15 @@ body{
     font-size: 15px;
     font-weight: bolder;
 }
+
+
+@media (max-width: 600px) {
+    .main {
+        max-width: 90%; /* Adjust max-width for smaller screens */
+    }
+
+    .main2 {
+        max-width: 80%; /* Adjust max-width for the submit button */
+        width: 100%; /* Make it full width on smaller screens */
+    }
+}
