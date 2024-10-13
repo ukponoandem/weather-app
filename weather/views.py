@@ -25,7 +25,7 @@ def index(request):
         res = urllib.request.urlopen('https://api.openweathermap.org/data/2.5/weather?q='+city+'&appid=f877e8883f2754d3d1425462eaed6f82').read()
         json_data = json.loads(res)
         
-        data={
+        Data={
             'country_code': str(json_data['sys']['country'] ),
             'coordinate':str(json_data['coord']['lon'])+ ''+ str(json_data['coord']['lat']),
             'temp':str(json_data['main']['temp'])+ 'k',
